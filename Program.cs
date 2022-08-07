@@ -1,9 +1,13 @@
-﻿Console.Write("Enter the number  ");
-int number = int.Parse(Console.ReadLine());
-
-int even = number % 2;
-
-if (even == 0)
-Console.WriteLine("The entered number is EVEN");
-else
-Console.WriteLine("The enterd number is NOT EVEN");
+﻿using static System.Console;
+Clear();
+WriteLine("Enter the number: ");
+int n = Convert.ToInt32(ReadLine());
+int a = 1;
+while (n >= a)
+{
+    if (a % 2==0)
+    {
+        WriteLine(a);
+    }    
+    a++;
+}
