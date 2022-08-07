@@ -1,15 +1,9 @@
-﻿Console.Write("Enter the number one ");
-int num1 = int.Parse(Console.ReadLine());
+﻿Console.Write("Enter the number  ");
+int number = int.Parse(Console.ReadLine());
 
-Console.Write("Enter the number two ");
-int num2 = int.Parse(Console.ReadLine());
+int even = number % 2;
 
-Console.Write("Enter the number three ");
-int num3 = int.Parse(Console.ReadLine());
-
-if(num1 > num2 && num1 >num3)
-Console.WriteLine($" The biggest number is {num1} ");
-if(num2>num1 && num2>num3)
-Console.WriteLine($"The biggest number is {num2} ");
+if (even == 0)
+Console.WriteLine("The entered number is EVEN");
 else
-Console.Write($"The biggest number is {num3}");
+Console.WriteLine("The enterd number is NOT EVEN");
